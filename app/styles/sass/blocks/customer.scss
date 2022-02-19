@@ -1,0 +1,125 @@
+.customer {
+  margin-bottom: 40px;
+}
+.customer-title {
+  margin-bottom: 54px;
+  position: relative;
+  font-size: 36px;
+  @media (max-width: 900px){
+    font-size: 28px;
+  }
+  @media (max-width: 450px){
+    font-size: 24px;
+  }
+}
+.customer-slider {
+  //padding: 22px 82px 0 82px;
+}
+.swiper {
+}
+.customer-swiper {
+}
+.swiper-wrapper {
+}
+.customer-wrapper {
+}
+
+.customer-slide {
+    padding-top: 40px;
+}
+.customer__img-wrapper {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  margin-bottom: 32px;
+  overflow: hidden;
+  z-index: 5;
+}
+.customer__img {
+  width: 100%;
+  object-fit: cover;
+}
+.customer__descr-wrapper {
+  background: #f8fafb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  max-width: 816px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 80px 125px 0 125px;
+  position: relative;
+  @media (max-width: 900px) {
+    padding: 80px 80px 0 80px;
+  }
+  @media (max-width: 600px) {
+    padding: 80px 40px 0 40px;
+  }
+}
+
+.customer__descr {
+  font-family: DM Sans;
+  font-size: 16px;
+  width: 100% ;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #515151;
+  margin-bottom: 32px;
+ 
+}
+.customer__name {
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: $textcolor;
+  margin-bottom: 8px;
+}
+.customer__prof {
+  font-family: Rubik;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #515151;
+  margin-bottom: 47px;
+}
+
+.swiper-pagination {
+}
+.customer-pagination {
+}
+
+.swiper-button-prev{
+left: 90px !important;
+top: 55% !important;
+@media (max-width: 900px){
+  left: 20px !important;
+}
+@media (max-width: 600px){
+  left: 5px !important;
+}
+} 
+.swiper-button-next{
+  right: 90px !important;
+  top: 55% !important;
+  @media (max-width: 900px){
+    right: 20px !important;
+  }
+  @media (max-width: 600px){
+    right: 5px !important;
+  }
+}
+.swiper-button-prev::after, 
+.swiper-button-next::after{
+  display: none;
+}
