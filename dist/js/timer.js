@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	// конечная дата
 	const deadline = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDay() + 27);
-	console.log(deadline);
 	// id таймера
 	let timerId = null;
 
@@ -21,12 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		const $hours = document.querySelectorAll('.timer__hours');
 		const $minutes = document.querySelectorAll('.timer__minutes');
 		const $seconds = document.querySelectorAll('.timer__seconds');
-
 		const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
 		const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
 		const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
 		const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
-		console.log(days);
+
 		for (let index = 0; index < $days.length; index++) {
 			$days[index] = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
 			$days[index].textContent = days < 10 ? '0' + days : days;
